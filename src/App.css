@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Black+Ops+One&family=Dancing+Script:wght@500&family=Dosis:wght@500&family=Handjet&family=Josefin+Sans:wght@300&family=Onest:wght@500&family=PT+Sans+Narrow&family=Poppins:wght@300;400;500&family=Roboto:wght@900&display=swap');
+
+body {
+    font-family: 'Onest', sans-serif !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body::before {
+    display: block;
+    content: '';
+    height: 60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar {
+    background-color: #eff0f3 !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, -0.0), 0 6px 20px 0 rgba(0, 0, 0, 0.16);
+    letter-spacing: 1px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.textImage {
+    height: 20vh;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+    letter-spacing: 1px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card {
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px !important;
+    transition: transform 0.30s;
+}
+
+.card:hover {
+    border: none;
+    transform: translateY(-1.0rem);
+    box-shadow: 0 1rem 1rem 0 #2423237c;
+}
+
+.card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a .card {
+    color: black;
+}
+
+.stg {
+    color: rgb(36, 113, 163);
+}
+
+.form-control {
+    border-radius: 20px;
+    border-color: rgb(36, 113, 163);
+    color: rgb(16, 106, 165) !important;
+}
+
+.btn {
+    border-radius: 20px;
+    background-color: rgb(36, 113, 163);
+    color: whitesmoke;
+}
+
+.btn:hover {
+    background-color: rgba(36, 112, 163, 0.76);
+    color: whitesmoke;
+}
+
+.footer {
+    background-color: #eff0f3;
+}
+
+.listItems li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.listItems li>a {
+    color: black;
+}
+
+.listItems li>a:hover {
+    color: rgb(36, 113, 163);
 }
